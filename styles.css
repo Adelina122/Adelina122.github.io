@@ -1,8 +1,25 @@
 body {
     margin: 0;
+    height: 100%;
+    width: 100%;
 }
 
-.buttons {
+.container {
+    width: 100%;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+
+.header {
+    text-align: right;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    
+}
+
+.btnS, .btnI {
     background-color: #303134;
     border: #303134;
     border-radius: 4px;
