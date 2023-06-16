@@ -47,11 +47,125 @@ a:hover,a:active {
     text-decoration: underline
 }
 
+.title-advanced {
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+}
+
+.line { 
+    border-bottom: 1px solid #ebebeb;
+}
+
+.find-title {
+    float: left;
+    display: inline-block;
+    min-width: 167px;
+    width: 16%;
+    font-size: 16px;
+    min-height: 42px;
+    font-weight: 500;
+    color: #333;
+    vertical-align: middle;
+}
+
+.empty-space {
+    float: left;
+    display: inline-block;
+    min-width: 167px;
+    min-height: 41px;
+    vertical-align: middle;
+    width: 50%;
+}
+
 .google-logo {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 7px 0 20px 0;
+    position: relative
+}
+
+.google-logo > .images-title {
+    color: #4285f4;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    position: absolute;
+    right: 475px;
+    bottom: 0;
+    white-space: nowrap;
+}
+
+.advanced-search-form {
+    max-width: 1140px;
+    min-width: 200px;
+    width: 96%;
+    margin: 40px 2% 0 45px;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+.advanced-search-form input {
+    width: 100%;
+    text-align-last: left;
+    height: 5px;
+    max-width: 560px;
+}
+
+.description-text{
+    display: inline-block;
+    width: 33%;
+    font-size: 13px;
+    color: #777;
+    padding-left: 5px;
+    vertical-align: middle;
+    text-align: left;
+    height: 41px;
+    display: table-cell;
+    font-weight: 600;
+}
+
+.input-lable {
+    float: left;
+    display: inline-block;
+    min-width: 167px;
+    width: 16%;
+    color: #222;
+    font-size: 13px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+
+.input-info {
+    float: left;
+    display: inline-block;
+    width: 32%;
+    min-width: 160px;
+    margin: 0 0 8px 1%;
+    color: #555;
+    font-size: 11px;
+    padding-left: 5px;
+    vertical-align: left;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .search-form {
@@ -98,6 +212,11 @@ input[type="text"] {
     margin: 0 0 0 5px;
 }
 
+.input-block input[type="text"]:focus {
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.3);
+    border: 1px solid #4d90fe;
+}
+
 input[type="submit"] {
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
@@ -116,11 +235,25 @@ input[type="submit"] {
     user-select: none;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover{
     box-shadow: 0 1px 1px rgba(0,0,0,.1);
     background-color: #f8f9fa;
     border: 1px solid #dadce0;
     color: #202124;
+}
+
+
+.input-block input[type="submit"]:hover {
+    background-color: #357ae8;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#357ae8));
+    background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+    border: 1px solid #2f5bb7;
+}
+
+.input-block input[type="submit"]:focus {
+    box-shadow: inset 0 0 0 1px #fff;
+    border: 1px solid #fff;
+    outline: 1px solid #4d90fe;
 }
 
 input[type="submit"]:focus {
@@ -132,4 +265,26 @@ input[type="submit"]:focus {
     text-align: -webkit-center;
     height: 70px;
     padding-top: 18px;
+}
+
+.advanced-button {
+    float: left;
+    text-align: right;
+    min-width: 167px;
+    min-height: 41px;
+    vertical-align: middle;
+    width: 50%;
+    margin-left: 185px;
+}
+
+.advanced-search-form input[type="submit"] {
+    background-color: dodgerblue;
+    color: white;
+    font-size: 12px;
+    height: 30px;
+    width: 120px;
+    min-width: 120px;
+    border-radius: 3px;
+    border: 1px solid #156bbd;
+    padding: 0 auto;
 }
