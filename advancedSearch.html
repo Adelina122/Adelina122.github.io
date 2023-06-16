@@ -12,15 +12,52 @@
 
             <header>
                 <a href="index.html">Google Search</a>
+                <a href="imageSearch.html">Image Search</a>
             </header>
 
-            <div class="search-form">
+            <div class="title-advanced">
+                <label>Advanced Search</label>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="advanced-search-form">
                 <form action="https://www.google.com/search">
-                    <input type="text" name="as_q">
-                    <input type="text" name="as_epq">
-                    <input type="text" name="as_oq">
-                    <input type="text" name="as_eq">
-                    <input type="submit" value="Search">
+                    <div class="find-title">
+                        <span>Find pages with...</span>
+                    </div>
+
+                    <div class="empty-space"></div>
+                    <div class="description-text">To do this in the search box.</div>
+
+                    <div class="input-block">
+
+                        <div class="input-lable">
+                            <label for="input1">all these words:</label>
+                        </div>
+                        <input type="text" name="as_q" id="input1">
+                        <div class="input-info">Type the important words: tri-colour rat terrier</div>
+
+                        <div class="input-lable">
+                            <label for="input2">this exact word or phrase:</label>
+                        </div>
+                        <input type="text" name="as_epq" id="input2">
+                        <div class="input-info">Put exact words in quotes: "rat terrier"</div>
+
+                        <div class="input-lable">
+                            <label for="input3">any of these words:</label>
+                        </div>
+                        <input type="text" name="as_oq" id="input3">
+                        <div class="input-info">Type OR between all the words you want: miniature OR standard</div>
+
+                        <div class="input-lable">
+                            <label for="input3">none of these words:</label>
+                        </div>
+                        <div class="input-info">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</div>
+
+                        <input type="text" name="as_eq" id="input4">
+                        <input type="submit" value="Search">
+                    </div>
                 </form>
             </div>
 
