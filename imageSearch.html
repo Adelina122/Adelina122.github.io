@@ -12,13 +12,24 @@
 
             <header>
                 <a href="index.html">Google Search</a>
+                <a href="advancedSearch.html">Google Advanced Search</a>
             </header>
 
+            <div class="google-logo">
+                <img class="google-img" alt="Google" height="105" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png    " width="309" alt="\">
+                <span class="images-title">images</span>
+            </div>
+
             <div class="search-form">
-                <form action="https://www.google.com/search">
+                <form action="https://www.google.com/search" method="get">
+                    <div class="search-input">
                     <input type="text" name="q">
                     <input type="hidden" name="tbm" value="isch">
+                </div>
+
+                <div class="buttons">
                     <input type="submit" value="Search">
+                </div>
                 </form>
             </div>
 
